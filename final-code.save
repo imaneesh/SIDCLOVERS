@@ -1,0 +1,5 @@
+f=open ("/share/data/day5/puzzle.txt")
+lines=f.readlines()
+
+for i in lines:
+	if 
