@@ -1,23 +1,23 @@
-f=open ("/share/data/day5/puzzle.txt")
-lines=f.readlines()
+#f=open ("/share/data/day5/puzzle.txt")
+#lines=f.readlines()
 
-q = 2
+q = 1
 l = 1
+k = 0
 x = 0
-d = 2
+v = 0
 b = ""
 a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "iXY"]
 for h in range(len(a)):
 	for i in a:
 		while x < len(a):
-			changed = False
 			for y in range(len(a)):
-				if a[x][1:q] in a[y][0:l]:
-					b = a[x] + a[y][2] 
-			changed = True
-			x = x + 1
-			q = q + 1
-			l = l + 1
-	
-print b
+				if a[x][q:q+l] in a[y][0:1+k]:
+					b = a[x] + a[y][2+v]
 
+			x = x + 1
+		l = l + 1
+		k = k + 1
+		v = v + 1
+
+print b

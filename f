@@ -1,0 +1,24 @@
+a = open ("/share/data/day5/puzzle.txt")
+lines=a.readlines()
+
+
+q = 1
+l = 1
+k = 0
+x = 0
+v = 0
+b = ""
+
+
+for i in a:
+        while x < len(a):
+                for y in range(len(a)):
+                        if a[x][q:q+l] in a[y][0:1+k]:
+                                b = b +  a[x] + a[y][2+v]
+
+                x = x + 1
+        k = k + 1
+        l = l + 1
+        v = v + 1
+print b,
+
