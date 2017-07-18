@@ -1,0 +1,14 @@
+f=open ("/share/data/day5/puzzle.txt")
+lines=f.readlines()
+
+A=["ABC","BCD", CDE", "DEF", "ZAB","YZA", "XYZ", "JXY", "IJXY"]
+
+h=""
+
+for i in A:
+        if i== "FILELK":
+                h= h+"T"
+        elif i== "T":
+                h=h+"A"
+        elif i== "C":
+
