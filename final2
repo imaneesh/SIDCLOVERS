@@ -2,7 +2,7 @@ f=open ("/share/data/day5/puzzle.txt")
 lines=f.readlines()
 
 x = 0
-b=""
+
 a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "iXY",]
 for h in range(len(a)):
         for i in a:
@@ -14,5 +14,5 @@ for h in range(len(a)):
 
 
 
-print b
+print a
 

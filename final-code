@@ -1,18 +1,23 @@
 f=open ("/share/data/day5/puzzle.txt")
 lines=f.readlines()
 
+q = 2
+l = 1
 x = 0
-
-a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "iXY",]
+d = 2
+b = ""
+a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "iXY"]
 for h in range(len(a)):
 	for i in a:
-		while x < len(a) - 1:
+		while x < len(a):
+			changed = False
 			for y in range(len(a)):
-				if a[x][1:2] in a[y][0:1]:
-					a[x] = a[x] + a[y][2]
+				if a[x][1:q] in a[y][0:l]:
+					b = a[x] + a[y][2] 
+			changed = True
 			x = x + 1
-		
-
-
-print a
+			q = q + 1
+			l = l + 1
+	
+print b
 
