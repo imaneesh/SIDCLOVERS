@@ -1,0 +1,30 @@
+")
+lines=f.readlines()
+
+q = 2
+l = 1
+x = 0
+d = 2
+b = " "
+a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "iXY",]
+for h in range(len(a)):
+	for i in a:
+		while x < len(a) - 1:
+			changed = False
+			for y in range(len(a)):
+				if a[x][1:q] in a[y][0:l]:
+					print x, y, d
+					b = a[x] + a[y][d] 
+					changed = True
+			x = x + 1
+			q = q + 1
+			l = l + 1
+			if changed:
+				d = d + 1
+			else:
+				d = d + 0
+				
+					
+print a
+print b
+

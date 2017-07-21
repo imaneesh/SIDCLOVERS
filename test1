@@ -1,32 +1,17 @@
 q = 1
-l = 1
-k = 0
-x = 0
-v = 0
-b = ""
+x = 0  
+b = "" 
 a = ["ABC", "BCD", "CDE", "DEF", "ZAB", "YZA", "XYZ", "JXY"]
-
+c = a[x]
 for i in a:
-        while x < len(a):
-                for y in range(len(a)):
-                        if a[x][q:q+l] in a[0:1+k]:
-                                b = b +  a[x] + a[2+v]
-
-	        x = x + 1
-      	k = k + 1
-    	l = l + 1
-  	v = v + 1
-
-if b[o] in 
-
-
-
-
-
-
-
-
-
-
-print b,
+	while x < len(a):
+		for y in range(len(a)):
+			if a[x][q:q+1] in a[y][0:1]:
+				if a[y] in c:                                
+					c = a[x][0] + c
+                                else:
+                                        c = c + a[y][2]	
+                x = x + 1
+        q = q + 1
+print c
 
